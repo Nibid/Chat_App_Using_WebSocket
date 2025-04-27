@@ -13,11 +13,11 @@ public class MessageEntity extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "sender_id")
-    private UserEntity senderId;
+    private UserEntity sender;
 
     @ManyToOne
     @JoinColumn(name = "receiver_id")
-    private UserEntity receiverId;
+    private UserEntity receiver;
 
     @Column(name = "message")
     private String message;
